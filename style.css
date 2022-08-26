@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+.facebook_name {
+    font-size: 50px;
+    color: #fff;
+    font-family: "Segoe UI";
+    font-weight: bold;
+}
+
+.email_container {
+    width: 150px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    background-color: #f0f0f0;
+    margin: 6px 0 6px;
+    outline: none;
+}
+
+.birthday {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.birthday_container {
+    color: #808080;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.KASARIAN {
+    color: #808080;
+    font-size: 24px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.header_box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4267b2;
+    padding: 8px 68px;
+    align-items: center;
+    width: 100%;
+}
+
+.sign_in_tags {
+    display: flex;
+    gap: 8px;
+    color: whitesmoke;
+    font-size: 12px;
+}
+
+.logo_picture {
+    width: auto;
+    max-width: 100%;
+    margin-top: 80px;
+}
+
+.login_button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.login01 {
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.facebook_tags {
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.log_in {
+    background-color: #2e3d6b;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.body_box {
+    padding: 32px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.facebook_picture {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    width: 912px;
+}
+
+.facebook_text {
+    color: #4267b2;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.createaccount_tags {
+    background-color: #fff;
+    width: 100%;
+    max-width: 50%;
+    padding: 32px 0;
+}
+
+.logo_question {
+    width: 16px;
+    height: 16px;
+}
+
+.birthday {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.firstname_text {
+    display: flex;
+    gap: 8px;
+}
+
+.firstname-input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border: gray 1px solid;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.MOBILENUMBER {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border: gray 1px solid;
+    border-radius: 8px;
+    margin: 14px 0 0;
+    padding: 8px;
+}
+
+.PASSWORD {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border: gray 1px solid;
+    border-radius: 8px;
+    margin: 14px 0;
+    padding: 8px;
+}
+
+.AGE {
+    width: 50px;
+    height: 30px;
+    font-size: 14px;
+    border: gray 1px solid;
+    border-radius: 6px;
+}
+
+.DATEMONTH {
+    width: 64px;
+    height: 30px;
+    font-size: 14px;
+    border: gray 1px solid;
+    border-radius: 6px;
+}
+
+.YEAR {
+    width: 68px;
+    height: 30px;
+    font-size: 14px;
+    border: gray 1px solid;
+    border-radius: 6px;
+}
+
+.forgotpassword {
+    display: none;
+}
+
+.signupngpogi {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    background-color: #3b5998;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.signupngpogi:hover {
+    background-color: rgb(12, 12, 247);
+}
+
+.QA {
+    gap: 20px;
+}
+
+.textmessage_container {
+    margin: 8px 0 20px;
+    color: black;
+}
+
+.quickandeasy {
+    margin-bottom: 10px;
+}
+
+.genderContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.createaccount {
+    display: none;
+}
+
+@media screen and (max-width: 726px) {
+    .facebook_name {
+        font-size: 42px;
+    }
+    .header_box {
+        padding: 8px 5%;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .body_box {
+        display: none;
+    }
+    .sign_in_tags {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .emailorphone p {
+        display: none;
+    }
+    .password_text {
+        display: none;
+    }
+    .email_container {
+        background-color: #4267b2;
+        border-bottom: #576fa2 2px solid;
+        width: 100%;
+        outline: none;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .sign_in_tags {
+        width: 90%;
+    }
+    .log_in {
+        width: 100%;
+        height: 42px;
+        color: #9daccb;
+    }
+    .login_button {
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 15px;
+    }
+    .emailorphone {
+        width: 100%;
+    }
+    .password {
+        width: 100%;
+    }
+    .forgottenaccount {
+        display: none;
+    }
+    .forgotpassword {
+        display: block;
+    }
+    .createaccount {
+        display: block;
+        position: absolute;
+        bottom: 50px;
+        border: rgba(255, 255, 255, 0.5) 1px solid;
+        width: 80%;
+        line-height: 42px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .facebook_tags {
+        margin-left: 0;
+    }
+}

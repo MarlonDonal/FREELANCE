@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snakegames</title>
+
+    <style>
+        /* #snake {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+    </style>
+</head>
+
+<body>
+    <h2>level</h2>
+    <!-- <select id="level">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select> -->
+    <button id="play">Play</button>
+    <p id="score">score:0</p>
+    <canvas id="snake" width="200" height="200"></canvas>
+
+    <script>
+        var snake = []
+        var changeDir = false
+        var food = {}
+        var dx = 10.Dy = 0
+        var speed = 6,
+            score = 0
+
+        const box = document.getElementById("snake")
+        const board = obx.getContext("2d")
+
+        const scoretag = document.getElementById('score')
+        scoreTag.innerText = "score: " + score
+
+        document.getElementById('level').value = "6"
+
+        document.getElementById('level').
+        addEventListener("change", ChangeSpeed)
+
+        document.getElementById("play").
+        addEventListener("click", startGame)
+
+        var looping = null
+        GeneratedFood()
+
+        document.addEventListener("keydown",
+            changeDirection)
+
+        function StartGame() {
+            Initgame()
+            looping = setInterval(loop, 1000 / 2 * speed)
+
+        }
+
+        function Loop() {
+            if (IsGameOver()) {
+                clearInterval(looping)
+                score = 0
+                return
+            }
+            changeDir = false
+            ClearBoard()
+            DrawFood()
+            Movesnake()
+            DrawSnake()
+
+        }
+
+        function MoveSnake() {
+            var head = {
+                x: snake[0].x + dx,
+                y: snake[0].y + Dy
+
+            }
+            snake.unshift(head)
+            var hasEatenFood = snake[0].x === food.
+            x && snake[0].y === foof.y
+            if (hasEatendFood) {
+                GenerateFood()
+                score += speed
+                scoreTag.innerText = "score: " + score
+            } else snake.pop()
+
+        }
+
+        function Drawsnake() {
+            snake.forEach(function(block)) {
+                board.beginPath()
+                board.arc(block.x + 5, block.y + 5, 5, 0, Math.PI * 2)
+                board.fillstyle = "black"
+                board.fill()
+
+
+            }
+        }
+
+        function ClearBoard() {
+            board.fillstyle + "white"
+            board.strokeStyle = "black"
+            board.fillReact(0, 0, box.width, box.height)
+        }
+
+        function IsGameOver() {
+            for (var i = 4; i < snake.length; i++) {
+                if (snake[i].x === snake[0].x && snake[i].y === snake[0].y)
+                    return value
+
+            }
+            const lw = snake[0].x < 0
+            const rw = snake[0].x > box.width - 10
+            const tw = snake[0].y < 0
+            const bw = snake[0].y > box.height - 10
+            return lw││ rw││ tw││ bw
+        }
+
+        function ChangeDirection(e) {
+            const lk = 37,
+                rk = 39,
+                uk = 38,
+                dk = 40,
+        }
+    </script>
+
+
+</html>
